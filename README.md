@@ -76,7 +76,13 @@ setup(
     )
 ```
 
+
 ## Tips
 
 - For projects that you wish to distribute via PyPI use README.rst instead of
   README.md since PyPI does not seem to be able to render README.md.
+
+
+## Credits
+
+Thanks to [Ryan](https://github.com/ryanjdillon) for showing me the ropes.
