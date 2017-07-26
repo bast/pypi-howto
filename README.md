@@ -36,6 +36,26 @@ $ twine upload dist/* -r pypi
 ```
 
 
+## Including other files
+
+Python files not located in a submodule (i.e. a directory with an
+`__init__.py`) or other files (not a `.py` file) can be included via a
+`MANIFEST.in` file with one of two directives:
+
+* `include` - used for single files or globbing files from a directory with `*`
+* `recursive-include` - used for recursively adding files under a directory
+
+After creating `MANIFEST.in` in your package directory add `include_package_data=True` to the `setup` object in `setup.py` (see below).
+
+
+## Example `MANIFEST.in`
+
+```
+include doc/source/*rst
+recursive-include project_name/data *
+```
+
+
 ## Example `setup.py`
 
 ```python
@@ -80,7 +100,12 @@ setup(
 ## Tips
 
 - For projects that you wish to distribute via PyPI use README.rst instead of
-  README.md since PyPI does not seem to be able to render README.md.
+  README.md since PyPI does not natively render README.md.
+
+- For rendering `.md` files, you can use [`pandoc`](https://coderwall.com/p/qawuyq/use-markdown-readme-s-in-python-modules).
+
+- For automating the creation of `setup.py` files, see the documentation for
+  [`setup.cfg`](https://setuptools.readthedocs.io/en/latest/setuptools.html#configuring-setup-using-setup-cfg-files).
 
 
 ## Credits
