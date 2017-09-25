@@ -96,6 +96,16 @@ setup(
     )
 ```
 
+You can use the `setuptools` function [`find_packages()`](https://pythonhosted.org/setuptools/setuptools.html#using-find-packages) to [automatically detect all subpackages and submodules](https://stackoverflow.com/questions/14553787/python-setup-py-sdist-only-including-py-source-from-top-level-module), so long as they contain and `__init__.py` file.
+
+```python
+from setuptools import setup, find_pacakges
+
+setup(
+    #...
+    packages=find_packages(),
+)
+```
 
 ## Tips
 
