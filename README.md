@@ -61,11 +61,16 @@ recursive-include project_name/data *
 ```python
 from setuptools import setup
 import os
+import sys
 
 _here = os.path.abspath(os.path.dirname(__file__))
 
-with open(os.path.join(_here, 'README.rst'), encoding='utf-8') as f:
-    long_description = f.read()
+if sys.version_info[0] < 3:
+    with open(os.path.join(_here, 'README.rst')) as f:
+        long_description = f.read()
+else:
+    with open(os.path.join(_here, 'README.rst'), encoding='utf-8') as f:
+        long_description = f.read()
 
 version = {}
 with open(os.path.join(_here, 'numerov', 'version.py')) as f:
