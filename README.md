@@ -114,7 +114,8 @@ setup(
     )
 ```
 
-You can use the `setuptools` function [`find_packages()`](https://pythonhosted.org/setuptools/setuptools.html#using-find-packages) to [automatically detect all subpackages and submodules](https://stackoverflow.com/a/14553799/943773), so long as they contain and `__init__.py` file.
+You can use the `setuptools` function [`find_packages()`](https://pythonhosted.org/setuptools/setuptools.html#using-find-packages)
+to [automatically detect all subpackages and submodules](https://stackoverflow.com/a/14553799/943773), so long as they contain and `__init__.py` file.
 
 ```python
 from setuptools import setup, find_pacakges
