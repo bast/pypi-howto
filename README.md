@@ -27,6 +27,12 @@ $ python setup.py sdist
 $ twine upload dist/* -r testpypi
 ```
 
+Once you are done with this step test to pip install from https://test.pypi.org:
+
+```
+$ pip install --index-url https://test.pypi.org/simple/ your-package
+```
+
 
 ## Upload to https://pypi.org
 
