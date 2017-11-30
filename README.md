@@ -1,6 +1,13 @@
 # PyPI howto
 
 
+## Executive summary
+
+- You need to create `~/.pypirc` and a `setup.py` for your project (examples below).
+- You need to (pip) install `twine`
+- Check yourself before you wreck yourself: try first on https://test.pypi.org
+
+
 ## Example `~/.pypirc`
 
 ```
