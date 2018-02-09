@@ -145,3 +145,4 @@ Thanks to [Ryan](https://github.com/ryanjdillon) for showing me the ropes.
 ## References
 
 - https://caremad.io/posts/2013/07/setup-vs-requirement/
+- https://gist.github.com/crccheck/3794099/
