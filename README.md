@@ -14,13 +14,13 @@
 [distutils]
 index-servers=
     pypi
-    testpypi
+    pypitest
 
 [pypi]
 username = ...
 password = ...
 
-[testpypi]
+[pypitest]
 repository = https://test.pypi.org/legacy/
 username = ...
 password = ...
@@ -31,7 +31,7 @@ password = ...
 
 ```
 $ python setup.py sdist
-$ twine upload dist/* -r testpypi
+$ twine upload dist/* -r pypitest
 ```
 
 Once you are done with this step test to pip install from https://test.pypi.org:
