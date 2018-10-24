@@ -4,8 +4,11 @@
 ## Executive summary
 
 - You need to create `~/.pypirc` and a `setup.py` for your project (examples below).
-- You need to (pip) install `twine`
-- Check yourself before you wreck yourself: try first on https://test.pypi.org
+- You need to (pip) install `twine`.
+- Check yourself before you wreck yourself: try first on https://test.pypi.org.
+- If you made a mistake, you cannot reuse the same name-version combination, therefore
+  it's good to practice first on https://test.pypi.org, or use e.g. `1.0.0-rc-1`, `1.0.0-rc-2`,
+  and delete these versions afterwards before announcing `1.0.0`.
 
 
 ## Example `~/.pypirc`
