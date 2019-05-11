@@ -95,7 +95,7 @@ with open(os.path.join(_here, 'numerov', 'version.py')) as f:
 setup(
     name='numerov',
     version=version['__version__'],
-    description=('Compute vibrational levels, wavefunctions, and expectation values using the Numerov-Cooley algorithm.'),
+    description='Compute vibrational levels, wavefunctions, and expectation values using the Numerov-Cooley algorithm.',
     long_description=long_description,
     author='Radovan Bast',
     author_email='radovan.bast@uit.no',
@@ -113,8 +113,9 @@ setup(
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Science/Research',
         'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3.6'],
-    )
+        'Programming Language :: Python :: 3.6',
+    ],
+)
 ```
 
 You can use the `setuptools` function [`find_packages()`](https://pythonhosted.org/setuptools/setuptools.html#using-find-packages)
