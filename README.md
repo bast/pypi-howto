@@ -130,10 +130,7 @@ setup(
 
 ## Tips
 
-- For projects that you wish to distribute via PyPI use README.rst instead of
-  README.md since PyPI does not natively render README.md.
-
-- For rendering `.md` files, you can use [`pandoc`](https://coderwall.com/p/qawuyq/use-markdown-readme-s-in-python-modules).
+- If you wish to use `README.md` instead of `README.rst`, specify `long_description_content_type='text/markdown'` in `setup.py`.
 
 - For automating the creation of `setup.py` files, see the documentation for
   [`setup.cfg`](https://setuptools.readthedocs.io/en/latest/setuptools.html#configuring-setup-using-setup-cfg-files).
