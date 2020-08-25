@@ -47,10 +47,20 @@ $ pip install --index-url https://test.pypi.org/simple/ your-package
 ## Upload to https://pypi.org
 
 ```
-$ python setup.py sdist
+$ python setup.py sdist bdist_wheel --universal
 $ twine upload dist/* -r pypi
 ```
 
+Run `setup.py` with `sdist` to build a source distribution and `bdist_wheel` to build a wheel (with `--universal` flag if your package is Python 2/3 universal). Then remove old versions from `/project/dist/` and ultimately use `twine` to upload to pypi.
+
+## Release your code on GitHub
+
+To tag your current commit as a released version, run:
+
+```shell
+git tag -a v1.0.0 -m "annotation for this release"
+git push origin --tags
+```
 
 ## Including other files
 
